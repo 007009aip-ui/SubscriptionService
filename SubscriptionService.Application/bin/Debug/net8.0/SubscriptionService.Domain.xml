@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SubscriptionService.Domain</name>
+    </assembly>
+    <members>
+        <member name="T:SubscriptionService.Domain.Entities.Payment">
+            <summary>Money fact: one charge for one billing period of a subscription.</summary>
+        </member>
+        <member name="M:SubscriptionService.Domain.Entities.Payment.#ctor">
+            <summary>Required by EF Core materialization.</summary>
+        </member>
+        <member name="T:SubscriptionService.Domain.Entities.Subscription">
+            <summary>
+            Subscription aggregate root. Owns its paid period and the money related invariants.
+            Cancelling never shortens the paid period: access is kept until <see cref="P:SubscriptionService.Domain.Entities.Subscription.CurrentPeriodEnd"/>.
+            </summary>
+        </member>
+        <member name="M:SubscriptionService.Domain.Entities.Subscription.#ctor">
+            <summary>Required by EF Core materialization.</summary>
+        </member>
+        <member name="P:SubscriptionService.Domain.Entities.Subscription.PricePerPeriod">
+            <summary>Total price of one billing period (monthly price * months).</summary>
+        </member>
+        <member name="P:SubscriptionService.Domain.Entities.Subscription.CurrentPeriodEnd">
+            <summary>Exclusive upper bound of the paid period.</summary>
+        </member>
+        <member name="M:SubscriptionService.Domain.Entities.Subscription.Create(System.Guid,SubscriptionService.Domain.Enums.SubscriptionType,System.DateTime,System.Int32,System.Decimal,System.String)">
+            <summary>Creates an active subscription for the first paid period.</summary>
+        </member>
+        <member name="M:SubscriptionService.Domain.Entities.Subscription.HasAccessAt(System.DateTime)">
+            <summary>True while the paid period lasts - regardless of Active/Cancelled status.</summary>
+        </member>
+        <member name="M:SubscriptionService.Domain.Entities.Subscription.CreateInitialPayment(System.DateTime)">
+            <summary>Payment for the very first period; must be persisted together with the subscription.</summary>
+        </member>
+        <member name="M:SubscriptionService.Domain.Entities.Subscription.Renew(System.DateTime)">
+            <summary>Prolongs the paid period and returns the payment for it (used by renewal / seed).</summary>
+        </member>
+        <member name="M:SubscriptionService.Domain.Entities.Subscription.Cancel(System.DateTime)">
+            <summary>Stops the renewal. The user keeps access until the end of the paid period.</summary>
+        </member>
+        <member name="T:SubscriptionService.Domain.Entities.User">
+            <summary>Application user. Password is never stored in plain text - only the hash.</summary>
+        </member>
+        <member name="M:SubscriptionService.Domain.Entities.User.#ctor">
+            <summary>Required by EF Core materialization.</summary>
+        </member>
+        <member name="P:SubscriptionService.Domain.Entities.User.Email">
+            <summary>Normalized (trimmed, lower-cased) e-mail, unique across the system.</summary>
+        </member>
+        <member name="T:SubscriptionService.Domain.Enums.PaymentStatus">
+            <summary>Outcome of a payment. Only <see cref="F:SubscriptionService.Domain.Enums.PaymentStatus.Succeeded"/> payments count as an expense.</summary>
+        </member>
+        <member name="T:SubscriptionService.Domain.Enums.SubscriptionStatus">
+            <summary>
+            Lifecycle status. "Expired" is not stored: it is derived from <c>CurrentPeriodEnd</c>,
+            so no background job is required to keep the data truthful.
+            </summary>
+        </member>
+        <member name="T:SubscriptionService.Domain.Enums.SubscriptionType">
+            <summary>Tariff plan of a subscription.</summary>
+        </member>
+        <member name="T:SubscriptionService.Domain.Exceptions.AppException">
+            <summary>Base class for expected (business) failures. Mapped to HTTP codes by the API middleware.</summary>
+        </member>
+        <member name="P:SubscriptionService.Domain.Exceptions.AppException.Code">
+            <summary>Stable machine readable error code returned in ProblemDetails.</summary>
+        </member>
+        <member name="T:SubscriptionService.Domain.Exceptions.ValidationException">
+            <summary>Invalid input -> HTTP 400.</summary>
+        </member>
+        <member name="T:SubscriptionService.Domain.Exceptions.NotFoundException">
+            <summary>Missing resource (or a resource owned by somebody else) -> HTTP 404.</summary>
+        </member>
+        <member name="T:SubscriptionService.Domain.Exceptions.ConflictException">
+            <summary>Business rule conflict -> HTTP 409.</summary>
+        </member>
+        <member name="T:SubscriptionService.Domain.Exceptions.UnauthorizedException">
+            <summary>Failed authentication -> HTTP 401.</summary>
+        </member>
+        <member name="T:SubscriptionService.Domain.Exceptions.DomainException">
+            <summary>Violation of a domain invariant (guard clause inside an entity).</summary>
+        </member>
+    </members>
+</doc>

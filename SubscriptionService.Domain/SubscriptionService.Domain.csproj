@@ -1,0 +1,3 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Domain: entities + business rules. No external dependencies (persistence-ignorant). -->
+</Project>
