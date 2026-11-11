@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SubscriptionService.Application</name>
+    </assembly>
+    <members>
+        <member name="T:SubscriptionService.Application.Abstractions.IClock">
+            <summary>Time is an external dependency - injecting it makes time dependent logic testable.</summary>
+        </member>
+        <member name="T:SubscriptionService.Application.Abstractions.ICurrentUser">
+            <summary>Ambient user of the current request, resolved from the JWT by the API layer.</summary>
+        </member>
+        <member name="M:SubscriptionService.Application.Abstractions.Persistence.IPaymentRepository.GetExpensesAsync(System.Guid,System.DateTime,System.DateTime,System.Threading.CancellationToken)">
+            <summary>Successful charges of the user inside [fromUtc, toUtcExclusive) - a flat read model for analytics.</summary>
+        </member>
+        <member name="M:SubscriptionService.Application.Abstractions.Persistence.ISubscriptionRepository.GetWithAccessByUserAsync(System.Guid,System.DateTime,System.Threading.CancellationToken)">
+            <summary>Subscriptions the user still has access to (active or cancelled but not yet expired).</summary>
+        </member>
+        <member name="M:SubscriptionService.Application.Abstractions.Persistence.ISubscriptionRepository.HasRunningSubscriptionAsync(System.Guid,System.DateTime,System.Threading.CancellationToken)">
+            <summary>True when the user already has a running (Active and not expired) subscription.</summary>
+        </member>
+        <member name="T:SubscriptionService.Application.Abstractions.Persistence.IUnitOfWork">
+            <summary>Atomicity boundary. Implemented by EF Core; mocked in unit tests.</summary>
+        </member>
+        <member name="T:SubscriptionService.Application.Abstractions.Persistence.IAppTransaction">
+            <summary>Provider agnostic transaction (no-op for non relational providers such as EF InMemory).</summary>
+        </member>
+        <member name="T:SubscriptionService.Application.Common.SubscriptionExpense">
+            <summary>Denormalized payment row used by the analytics service (EF translates the projection to SQL).</summary>
+        </member>
+        <member name="M:SubscriptionService.Application.Common.SubscriptionExpense.#ctor(System.Guid,SubscriptionService.Domain.Enums.SubscriptionType,System.Decimal,System.DateTime)">
+            <summary>Denormalized payment row used by the analytics service (EF translates the projection to SQL).</summary>
+        </member>
+        <member name="T:SubscriptionService.Application.DTOs.ExpenseReportDto">
+            <summary>GET /api/analytics/expenses response: totals + month/type breakdown (empty months are zero filled).</summary>
+        </member>
+        <member name="M:SubscriptionService.Application.DTOs.ExpenseReportDto.#ctor(System.DateOnly,System.DateOnly,System.Int32,System.String,System.Decimal,System.Int32,System.Collections.Generic.IReadOnlyList{SubscriptionService.Application.DTOs.ExpenseByMonthDto},System.Collections.Generic.IReadOnlyList{SubscriptionService.Application.DTOs.ExpenseByTypeDto})">
+            <summary>GET /api/analytics/expenses response: totals + month/type breakdown (empty months are zero filled).</summary>
+        </member>
+        <member name="T:SubscriptionService.Application.DTOs.RegisterRequest">
+            <summary>POST /api/auth/register payload.</summary>
+        </member>
+        <member name="M:SubscriptionService.Application.DTOs.RegisterRequest.#ctor(System.String,System.String,System.String)">
+            <summary>POST /api/auth/register payload.</summary>
+        </member>
+        <member name="T:SubscriptionService.Application.DTOs.LoginRequest">
+            <summary>POST /api/auth/login payload.</summary>
+        </member>
+        <member name="M:SubscriptionService.Application.DTOs.LoginRequest.#ctor(System.String,System.String)">
+            <summary>POST /api/auth/login payload.</summary>
+        </member>
+        <member name="T:SubscriptionService.Application.DTOs.AuthResponse">
+            <summary>Issued JWT + its lifetime + the user profile.</summary>
+        </member>
+        <member name="M:SubscriptionService.Application.DTOs.AuthResponse.#ctor(System.String,System.String,System.DateTime,SubscriptionService.Application.DTOs.UserDto)">
+            <summary>Issued JWT + its lifetime + the user profile.</summary>
+        </member>
+        <member name="T:SubscriptionService.Application.DTOs.CreateSubscriptionRequest">
+            <summary>POST /api/subscriptions payload. Type accepts "Basic" | "Premium" | "Corporate" (or 1 | 2 | 3).</summary>
+        </member>
+        <member name="M:SubscriptionService.Application.DTOs.CreateSubscriptionRequest.#ctor(SubscriptionService.Domain.Enums.SubscriptionType,System.DateTime,System.Int32)">
+            <summary>POST /api/subscriptions payload. Type accepts "Basic" | "Premium" | "Corporate" (or 1 | 2 | 3).</summary>
+        </member>
+        <member name="T:SubscriptionService.Application.Mappings.DtoMappings">
+            <summary>Explicit hand written mapping - no reflection based mapper, no hidden magic.</summary>
+        </member>
+        <member name="T:SubscriptionService.Application.Options.JwtOptions">
+            <summary>JWT settings. Bound from configuration section "Jwt" and validated on startup.</summary>
+        </member>
+        <member name="P:SubscriptionService.Application.Options.JwtOptions.SigningKey">
+            <summary>HS256 requires at least 256 bits (32 ASCII characters). Use user-secrets / env vars in production.</summary>
+        </member>
+        <member name="T:SubscriptionService.Application.Options.PricingOptions">
+            <summary>Monthly prices per plan. Bound from configuration section "Pricing".</summary>
+        </member>
+        <member name="T:SubscriptionService.Application.Pricing.ISubscriptionPricing">
+            <summary>Single source of truth for prices (Open/Closed: a new plan does not touch the service logic).</summary>
+        </member>
+        <member name="T:SubscriptionService.Application.Services.AnalyticsService">
+            <summary>Expense analytics over successful payments, grouped by calendar month and plan.</summary>
+        </member>
+        <member name="T:SubscriptionService.Application.Services.SubscriptionService">
+            <summary>Subscription use cases: list, create (transactionally with the first payment), cancel.</summary>
+        </member>
+    </members>
+</doc>

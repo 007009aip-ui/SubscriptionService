@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SubscriptionService.Infrastructure</name>
+    </assembly>
+    <members>
+        <member name="F:SubscriptionService.Infrastructure.DatabaseProvider.SqliteInMemory">
+            <summary>Default: real relational SQL + transactions, zero setup, data lives while the process runs.</summary>
+        </member>
+        <member name="F:SubscriptionService.Infrastructure.DatabaseProvider.InMemory">
+            <summary>EF InMemory provider (no transactions, no SQL).</summary>
+        </member>
+        <member name="F:SubscriptionService.Infrastructure.DatabaseProvider.Postgres">
+            <summary>Production provider - only a connection string change is required.</summary>
+        </member>
+        <member name="T:SubscriptionService.Infrastructure.Persistence.Configurations.UtcDateTimeConverter">
+            <summary>Guarantees that every DateTime leaving/entering the database is DateTimeKind.Utc.</summary>
+        </member>
+        <member name="T:SubscriptionService.Infrastructure.Persistence.DbInitializer">
+            <summary>Creates the schema (demo mode) and seeds one demo user with a payment history.</summary>
+        </member>
+        <member name="T:SubscriptionService.Infrastructure.Security.IdentityPasswordHasher">
+            <summary>
+            PBKDF2 (HMAC-SHA256, 100k iterations, per-password salt) via ASP.NET Core Identity's PasswordHasher.
+            The user argument is only used by custom hashers, the default implementation ignores it.
+            </summary>
+        </member>
+    </members>
+</doc>

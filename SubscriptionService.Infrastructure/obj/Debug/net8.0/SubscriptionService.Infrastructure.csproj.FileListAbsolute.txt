@@ -1,0 +1,42 @@
+/tmp/arena/tenants/ec7e34ce-2306-496a-88a4-4508c2614c0c/sessions/ab056ecf-eb05-56f5-8277-6a4a45eeeeb5/workspace/src/SubscriptionService.Infrastructure/bin/Debug/net8.0/SubscriptionService.Infrastructure.deps.json
+/tmp/arena/tenants/ec7e34ce-2306-496a-88a4-4508c2614c0c/sessions/ab056ecf-eb05-56f5-8277-6a4a45eeeeb5/workspace/src/SubscriptionService.Infrastructure/bin/Debug/net8.0/SubscriptionService.Infrastructure.dll
+/tmp/arena/tenants/ec7e34ce-2306-496a-88a4-4508c2614c0c/sessions/ab056ecf-eb05-56f5-8277-6a4a45eeeeb5/workspace/src/SubscriptionService.Infrastructure/bin/Debug/net8.0/SubscriptionService.Infrastructure.pdb
+/tmp/arena/tenants/ec7e34ce-2306-496a-88a4-4508c2614c0c/sessions/ab056ecf-eb05-56f5-8277-6a4a45eeeeb5/workspace/src/SubscriptionService.Infrastructure/bin/Debug/net8.0/SubscriptionService.Infrastructure.xml
+/tmp/arena/tenants/ec7e34ce-2306-496a-88a4-4508c2614c0c/sessions/ab056ecf-eb05-56f5-8277-6a4a45eeeeb5/workspace/src/SubscriptionService.Infrastructure/bin/Debug/net8.0/SubscriptionService.Application.dll
+/tmp/arena/tenants/ec7e34ce-2306-496a-88a4-4508c2614c0c/sessions/ab056ecf-eb05-56f5-8277-6a4a45eeeeb5/workspace/src/SubscriptionService.Infrastructure/bin/Debug/net8.0/SubscriptionService.Domain.dll
+/tmp/arena/tenants/ec7e34ce-2306-496a-88a4-4508c2614c0c/sessions/ab056ecf-eb05-56f5-8277-6a4a45eeeeb5/workspace/src/SubscriptionService.Infrastructure/bin/Debug/net8.0/SubscriptionService.Application.pdb
+/tmp/arena/tenants/ec7e34ce-2306-496a-88a4-4508c2614c0c/sessions/ab056ecf-eb05-56f5-8277-6a4a45eeeeb5/workspace/src/SubscriptionService.Infrastructure/bin/Debug/net8.0/SubscriptionService.Application.xml
+/tmp/arena/tenants/ec7e34ce-2306-496a-88a4-4508c2614c0c/sessions/ab056ecf-eb05-56f5-8277-6a4a45eeeeb5/workspace/src/SubscriptionService.Infrastructure/bin/Debug/net8.0/SubscriptionService.Domain.pdb
+/tmp/arena/tenants/ec7e34ce-2306-496a-88a4-4508c2614c0c/sessions/ab056ecf-eb05-56f5-8277-6a4a45eeeeb5/workspace/src/SubscriptionService.Infrastructure/bin/Debug/net8.0/SubscriptionService.Domain.xml
+/tmp/arena/tenants/ec7e34ce-2306-496a-88a4-4508c2614c0c/sessions/ab056ecf-eb05-56f5-8277-6a4a45eeeeb5/workspace/src/SubscriptionService.Infrastructure/obj/Debug/net8.0/SubscriptionService.Infrastructure.csproj.AssemblyReference.cache
+/tmp/arena/tenants/ec7e34ce-2306-496a-88a4-4508c2614c0c/sessions/ab056ecf-eb05-56f5-8277-6a4a45eeeeb5/workspace/src/SubscriptionService.Infrastructure/obj/Debug/net8.0/SubscriptionService.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/tmp/arena/tenants/ec7e34ce-2306-496a-88a4-4508c2614c0c/sessions/ab056ecf-eb05-56f5-8277-6a4a45eeeeb5/workspace/src/SubscriptionService.Infrastructure/obj/Debug/net8.0/SubscriptionService.Infrastructure.AssemblyInfoInputs.cache
+/tmp/arena/tenants/ec7e34ce-2306-496a-88a4-4508c2614c0c/sessions/ab056ecf-eb05-56f5-8277-6a4a45eeeeb5/workspace/src/SubscriptionService.Infrastructure/obj/Debug/net8.0/SubscriptionService.Infrastructure.AssemblyInfo.cs
+/tmp/arena/tenants/ec7e34ce-2306-496a-88a4-4508c2614c0c/sessions/ab056ecf-eb05-56f5-8277-6a4a45eeeeb5/workspace/src/SubscriptionService.Infrastructure/obj/Debug/net8.0/SubscriptionService.Infrastructure.csproj.CoreCompileInputs.cache
+/tmp/arena/tenants/ec7e34ce-2306-496a-88a4-4508c2614c0c/sessions/ab056ecf-eb05-56f5-8277-6a4a45eeeeb5/workspace/src/SubscriptionService.Infrastructure/obj/Debug/net8.0/Subscrip.2D5D8578.Up2Date
+/tmp/arena/tenants/ec7e34ce-2306-496a-88a4-4508c2614c0c/sessions/ab056ecf-eb05-56f5-8277-6a4a45eeeeb5/workspace/src/SubscriptionService.Infrastructure/obj/Debug/net8.0/SubscriptionService.Infrastructure.dll
+/tmp/arena/tenants/ec7e34ce-2306-496a-88a4-4508c2614c0c/sessions/ab056ecf-eb05-56f5-8277-6a4a45eeeeb5/workspace/src/SubscriptionService.Infrastructure/obj/Debug/net8.0/refint/SubscriptionService.Infrastructure.dll
+/tmp/arena/tenants/ec7e34ce-2306-496a-88a4-4508c2614c0c/sessions/ab056ecf-eb05-56f5-8277-6a4a45eeeeb5/workspace/src/SubscriptionService.Infrastructure/obj/Debug/net8.0/SubscriptionService.Infrastructure.xml
+/tmp/arena/tenants/ec7e34ce-2306-496a-88a4-4508c2614c0c/sessions/ab056ecf-eb05-56f5-8277-6a4a45eeeeb5/workspace/src/SubscriptionService.Infrastructure/obj/Debug/net8.0/SubscriptionService.Infrastructure.pdb
+/tmp/arena/tenants/ec7e34ce-2306-496a-88a4-4508c2614c0c/sessions/ab056ecf-eb05-56f5-8277-6a4a45eeeeb5/workspace/src/SubscriptionService.Infrastructure/obj/Debug/net8.0/ref/SubscriptionService.Infrastructure.dll
+C:\Users\РС\Downloads\workspace (1)\src\SubscriptionService.Infrastructure\bin\Debug\net8.0\SubscriptionService.Infrastructure.deps.json
+C:\Users\РС\Downloads\workspace (1)\src\SubscriptionService.Infrastructure\bin\Debug\net8.0\SubscriptionService.Infrastructure.dll
+C:\Users\РС\Downloads\workspace (1)\src\SubscriptionService.Infrastructure\bin\Debug\net8.0\SubscriptionService.Infrastructure.pdb
+C:\Users\РС\Downloads\workspace (1)\src\SubscriptionService.Infrastructure\bin\Debug\net8.0\SubscriptionService.Infrastructure.xml
+C:\Users\РС\Downloads\workspace (1)\src\SubscriptionService.Infrastructure\bin\Debug\net8.0\SubscriptionService.Application.dll
+C:\Users\РС\Downloads\workspace (1)\src\SubscriptionService.Infrastructure\bin\Debug\net8.0\SubscriptionService.Domain.dll
+C:\Users\РС\Downloads\workspace (1)\src\SubscriptionService.Infrastructure\bin\Debug\net8.0\SubscriptionService.Application.pdb
+C:\Users\РС\Downloads\workspace (1)\src\SubscriptionService.Infrastructure\bin\Debug\net8.0\SubscriptionService.Application.xml
+C:\Users\РС\Downloads\workspace (1)\src\SubscriptionService.Infrastructure\bin\Debug\net8.0\SubscriptionService.Domain.pdb
+C:\Users\РС\Downloads\workspace (1)\src\SubscriptionService.Infrastructure\bin\Debug\net8.0\SubscriptionService.Domain.xml
+C:\Users\РС\Downloads\workspace (1)\src\SubscriptionService.Infrastructure\obj\Debug\net8.0\SubscriptionService.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\РС\Downloads\workspace (1)\src\SubscriptionService.Infrastructure\obj\Debug\net8.0\SubscriptionService.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\РС\Downloads\workspace (1)\src\SubscriptionService.Infrastructure\obj\Debug\net8.0\SubscriptionService.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\РС\Downloads\workspace (1)\src\SubscriptionService.Infrastructure\obj\Debug\net8.0\SubscriptionService.Infrastructure.AssemblyInfo.cs
+C:\Users\РС\Downloads\workspace (1)\src\SubscriptionService.Infrastructure\obj\Debug\net8.0\SubscriptionService.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\РС\Downloads\workspace (1)\src\SubscriptionService.Infrastructure\obj\Debug\net8.0\Subscrip.2D5D8578.Up2Date
+C:\Users\РС\Downloads\workspace (1)\src\SubscriptionService.Infrastructure\obj\Debug\net8.0\SubscriptionService.Infrastructure.dll
+C:\Users\РС\Downloads\workspace (1)\src\SubscriptionService.Infrastructure\obj\Debug\net8.0\refint\SubscriptionService.Infrastructure.dll
+C:\Users\РС\Downloads\workspace (1)\src\SubscriptionService.Infrastructure\obj\Debug\net8.0\SubscriptionService.Infrastructure.xml
+C:\Users\РС\Downloads\workspace (1)\src\SubscriptionService.Infrastructure\obj\Debug\net8.0\SubscriptionService.Infrastructure.pdb
+C:\Users\РС\Downloads\workspace (1)\src\SubscriptionService.Infrastructure\obj\Debug\net8.0\ref\SubscriptionService.Infrastructure.dll
